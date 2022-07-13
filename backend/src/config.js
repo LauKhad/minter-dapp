@@ -42,7 +42,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://polite-tapioca-9942c7.netlify.app/", // Replace with your website or remove this line if you do not have one.
+  external_url: "https://discomacaws.netlify.app//", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
