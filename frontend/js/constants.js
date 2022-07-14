@@ -3,7 +3,7 @@ const chain = 'rinkeby'; // rinkeby, polygon, or ethereum
 
 const welcome_h1 = "¡¡Bienvenido a la colección de DiscoMacaws!!🦜🦜";
 const welcome_h2 = "Conecta tu cartera de Metamask para iniciar 🦊";
-const welcome_p = 'Tienda virtual de origen colombiano cuyo principal objetivo es generar arte virtual que será utilizado para renovar la boletería de discotecas y eventos. Cada NFT en nuestra tienda presenta un guacamayo que tiene accesorios característicos de nuestras regiones. Un porcentaje de las ganancias será donado a fundaciones que velan por la conservación del ecosistema amazónico que alberga guacamayos y muchas otras especies naturales que necesitan ser preservadas';
+const welcome_p = 'Tienda virtual de origen colombiano cuyo principal objetivo es generar arte virtual que será utilizado para renovar la tiquetería de discotecas y eventos.';
 const h1_presale_coming_soon = "¡¡Drop de NFTs muy pronto!!🎉";
 const h1_presale_mint = "¡¡Preventa de minado muy pronto!!";
 const h1_public_mint = "¡¡Minado público abierto!!🎉🎉";
