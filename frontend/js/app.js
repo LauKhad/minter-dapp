@@ -48,13 +48,13 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 const updateConnectStatus = async () => {
   const onboarding = new MetaMaskOnboarding();
-  const onboardButton = document.getElementById("connectWallet");
+  const onboardButton = document.getElementById("ConectaTuCartera");
   const notConnected = document.querySelector('.not-connected');
   const spinner = document.getElementById("spinner");
   if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
-    onboardButton.innerText = "Install MetaMask!";
+    onboardButton.innerText = "¡Instala Metamask!";
     onboardButton.onclick = () => {
-      onboardButton.innerText = "Connecting...";
+      onboardButton.innerText = "Conectando...";
       onboardButton.disabled = true;
       onboarding.startOnboarding();
       // HIDE SPINNER
@@ -74,7 +74,7 @@ const updateConnectStatus = async () => {
     window.contract = new web3.eth.Contract(abi, contractAddress);
     loadInfo();
   } else {
-    onboardButton.innerText = "Connect MetaMask!";
+    onboardButton.innerText = "Conecta a MetaMask!";
     // HIDE SPINNER
     spinner.classList.add('hidden');
     notConnected.classList.remove('hidden');
@@ -280,7 +280,7 @@ function setTotalPrice() {
   const totalPrice = document.getElementById("totalPrice");
   const mintButton = document.getElementById("mintButton");
   if(mintInputValue < 1 || mintInputValue > info.deploymentConfig.tokensPerMint) {
-    totalPrice.innerText = 'INVALID QUANTITY';
+    totalPrice.innerText = 'CANTIDAD NO VALIDA';
     mintButton.disabled = true;
     mintInput.disabled = true;
     return;
@@ -326,14 +326,14 @@ async function mint() {
           countdownContainer.classList.add('hidden');
           mintedContainer.classList.remove('hidden');
         }
-        console.log("Minted successfully!", `Transaction Hash: ${mintTransaction.transactionHash}`);
+        console.log("¡Minado exitosamente!", `Transaction Hash: ${mintTransaction.transactionHash}`);
       } else {
         const mainText = document.getElementById("mainText");
         mainText.innerText = mint_failed;
         mintButton.innerText = button_public_mint;
         mintButton.disabled = false;
 
-        console.log("Failed to mint!");
+        console.log("El minado ha fallado 😔");
       }
     } catch(e) {
       const mainText = document.getElementById("mainText");
@@ -363,14 +363,14 @@ async function mint() {
           countdownContainer.classList.add('hidden');
           mintedContainer.classList.remove('hidden');
         }
-        console.log("Minted successfully!", `Transaction Hash: ${presaleMintTransaction.transactionHash}`);
+        console.log("¡Minado exitosamente!", `Transaction Hash: ${presaleMintTransaction.transactionHash}`);
       } else {
         const mainText = document.getElementById("mainText");
         mainText.innerText = mint_failed;
         mintButton.innerText = button_presale_mint_whitelisted;
         mintButton.disabled = false;
 
-        console.log("Failed to mint!");
+        console.log("El minado ha fallado 😔");
       }
     } catch(e) {
       const mainText = document.getElementById("mainText");
