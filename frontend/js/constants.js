@@ -21,7 +21,10 @@ const button_presale_already_minted = "¡¡Unete a la comunidad 👊!!";
 const button_public_mint = "¡Mina tu NFT! ⛏";
 const mint_failed = "El minado ha fallado.😢 Por favor, intenta de nuevo.";
 const abi = [
-    {
+  {
+    "response": "OK",
+    "abi": [
+      {
         "inputs": [
           {
             "components": [
@@ -1504,4 +1507,6 @@ const abi = [
         "type": "function",
         "signature": "0x476343ee"
       }
+    ]
+  }
 ]
