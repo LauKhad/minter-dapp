@@ -48,7 +48,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
 const updateConnectStatus = async () => {
   const onboarding = new MetaMaskOnboarding();
-  const onboardButton = document.getElementById("ConectaTuCartera");
+  const onboardButton = document.getElementById("connectWallet");
   const notConnected = document.querySelector('.not-connected');
   const spinner = document.getElementById("spinner");
   if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
